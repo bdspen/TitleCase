@@ -1,0 +1,31 @@
+It capitalizes a single letter
+Input: r
+Output: R
+
+It capitalizes  the first letter of a single word.
+input: star
+output: Star
+
+It capitalized the first letter of each word.
+Input: star wars
+Output: Star Wars
+
+It does not capitalize designated words.
+input: star wars return of the jedi
+output: Star Wars Return of the Jedi
+
+It capitalizes designated words if they are the first word.
+Input: the return of the jedi
+Output: The Return of the Jedi
+
+It handles non letter characters.
+Input: 1984 by george orwell
+Outuput: 1984 by George Orwell
+
+It decapitalizes any capitalized letters that aren't the first letter of a word
+input: ThE retURN of THE JEdi
+output: The Return of the Jedi
+
+It manages unique case entires
+input:  o'reilly's pub
+output: O'Reilly's Pub
