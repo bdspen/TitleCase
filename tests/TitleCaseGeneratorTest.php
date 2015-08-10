@@ -29,6 +29,18 @@
             //Assert
             $this->assertEquals("Star Wars", $result);
         }
+        function test_makeTitleCase_designated_words()
+        {
+            //Arrange
+            $test_TitleCaseGenerator = new TitleCaseGenerator;
+            $input = "return of the jedi";
+
+            //Act
+            $result = $test_TitleCaseGenerator->makeTitleCase($input);
+
+            //Assert
+            $this->assertEquals("Return of the Jedi", $result);
+        }
     }
 
 ?>
