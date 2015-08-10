@@ -3,12 +3,20 @@
     {
         function makeTitleCase($input_title)
         {
+//
             $input_array_of_words = explode(" ", $input_title);
             $output_titlecased = array();
-            foreach ($input_array_of_words as $word) {
-                array_push($output_titlecased, ucfirst($word));
+
+            $excluded_words = array('a', 'an', 'and', 'at', 'but', 'by', 'else', 'for', 'from', 'if', 'in', 'into', 'nor', 'of', 'off', 'on', 'or', 'out', 'over', 'the', 'then', 'to', 'when', 'with');
+
+            foreach ( $input_array_of_words as $position => $indi ) {
+                if( !$position or !in_array($indi, $excluded_words))
+                $input_array_of_words[$position] = ucfirst($indi);
+
+
             }
-            return implode(" ", $output_titlecased);
+            $newtitle = implode(" ", $input_array_of_words);
+            return $newtitle;
         }
 
     }
