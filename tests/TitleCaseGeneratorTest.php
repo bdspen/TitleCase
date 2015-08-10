@@ -33,13 +33,13 @@
         {
             //Arrange
             $test_TitleCaseGenerator = new TitleCaseGenerator;
-            $input = "return of the jedi";
+            $input = "of 1234 of retuRn Of tHe jedi";
 
             //Act
             $result = $test_TitleCaseGenerator->makeTitleCase($input);
 
             //Assert
-            $this->assertEquals("Return of the Jedi", $result);
+            $this->assertEquals("Of 1234 of Return of the Jedi", $result);
         }
     }
 
